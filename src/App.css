@@ -1,0 +1,139 @@
+html,
+body {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  background: #fdfdfd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background: #ffff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 1380px) {
+  .site-header {
+    justify-content: center;
+  }
+}
+
+.site-header a {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.site-header h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: #000;
+}
+
+.site-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list-container {
+  display: flex;
+}
+
+.list {
+  padding: 20px;
+}
+
+.list-item {
+  box-shadow: 5px 6px 11px #f0efef;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #fbfbfb;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.list-item span h3 {
+  font-size: 20px;
+}
+
+.list-item span {
+  margin: 4px 0 4px 0;
+  font-size: 14px;
+}
+
+.button {
+  background-color: #000;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 40px);
+}
+
+.card-content {
+  width: 100%;
+  box-shadow: 5px 6px 11px #f0efef;
+  background: #fff;
+  border: 1px solid #fbfbfb;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h1,
+h2,
+article,
+span {
+  padding: 4px 10px;
+}
+
+.card-content span {
+  margin: 6px 0 4px 0;
+}
+
+.card-footer {
+  margin: 20px 0;
+  display: flex;
+  align-content: flex-start;
+}
